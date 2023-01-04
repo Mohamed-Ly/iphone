@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container {
+    position: relative;
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.container .logo {
+    width: 40px;
+}
+.container ul li {
+    display: inline-block;
+    list-style: none;
+}
+.container ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.container .content .text {
+    width: 40%;
+    color: #fff;
+}
+.container .content .text h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.container .content .text p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+.container .content .text a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+.container .content .image {
+    width: 30%;
+}
+.container .content .image img {
+    max-width: 100%;
+    /* width: 200px; */
+}
+.container .icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .icons img {
+    width: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.container .icons img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/* ============================ MEDIA SM ============================ */
+
+
+
+
+@media (max-width: 767px) {
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .container .content {
+        padding: 50px 0;
+    }
+    .container .content .text h2 {
+        font-size: 25px;
+    }
+    .container .content .text p {
+        font-size: 16px;
+    }
+    .container .content .text a {
+        display: block;
+        width: fit-content;
+        margin: 15px auto 0;
+    }
+    .container ul li {
+        display: none;
+    }
+    .container .content .text {
+        width: 100%;
+        text-align: center;
+        margin: 25px 0;
+    }
+    .container .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
